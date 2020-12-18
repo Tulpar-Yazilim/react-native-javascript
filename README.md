@@ -55,7 +55,7 @@ Talk to us about more commands if you need
 
 ## 📫 Contact Us
 
-- Email - [mailto:info@tulparyazilim.com.tr](info@tulparyazilim.com.tr)
+- Email - [info@tulparyazilim.com.tr](mailto:info@tulparyazilim.com.tr)
 - LinkedIn - [Tulpar Yazılım](https://www.linkedin.com/company/tulparyazilim)
 - Blog - [Blog](https://www.tulparyazilim.com.tr/blog)
 
