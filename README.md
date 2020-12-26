@@ -5,6 +5,55 @@ So this project is our base project for react native. You can just download and 
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=tulpar-base-reactnative.tulparyazilim)
 
+## ⭐️ Base Features
+
+⭐️ **styled-components** and **styled-system**
+
+   - You can use styled components for creating base components. It is really simple to use. You can find some example components such as "Box" on "src/app/components" folder.
+
+⭐️ **react-tracked**
+
+   - If you don't want to use redux system, you can follow to use react-tracked. It is not complex and simple to use. We really like to use it. Yuo can find context on "src/base/utils" folder.
+   
+⭐️ **react-native-svg**
+
+   - You can use react-native-svg for translating svg icons into components. So svg components can be editable inside project.
+
+⭐️ **react-native-toast-message**
+
+   - This package is very useful to show toast messages to user.
+
+⭐️ **react-native-elements**
+
+   - With this package you can add very useful components into your project. Follow this link for more info. https://reactnativeelements.com/
+  
+⭐️ **react-native-onesignal**
+
+   - We generally use onesignal for sending push notifications to users. So follow this link for more info. https://documentation.onesignal.com/docs/react-native-sdk
+   
+⭐️ **react-native-crypto-js**
+
+   - You can use cryptojs for encrypt and decrypt implementation to secure datas.
+   
+⭐️ **@react-native-async-storage/async-storage**
+
+   - Async storage is very useful package for save your state on local storage.
+   
+⭐️ **@react-navigation/bottom-tabs** and **@react-navigation/drawer**
+
+   - We added bottom tabs and side drawer menu support to our base project. So you don't need to add bottom tabs and side menu. You can find ready to use bottom tab and side menu on "src/app/navigations" folder.
+   
+⭐️ **react-native-inappbrowser-reborn**
+
+   - If you need in app browser in your project, you can use this package. For more info follow this link. https://www.npmjs.com/package/react-native-inappbrowser-reborn
+   
+⭐️ **react-native-modalbox**
+
+   - Yuo can use this package for adding custom modals into your project. For more info follow this link. https://www.npmjs.com/package/react-native-modalbox
+   
+
+
+
 ## ⚡ Npm Commands
 
 Talk to us about more commands if you need
