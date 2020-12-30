@@ -1,3 +1,17 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.8, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
 apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
@@ -122,6 +136,7 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    ndkVersion '21.2.6472646'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -145,6 +160,12 @@ android {
         }
     }
     signingConfigs {
+        release {
+            storeFile file('tulparbase.keystore')
+            storePassword 'tulparbase'
+            keyAlias 'tulparbase'
+            keyPassword 'tulparbase'
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
@@ -156,9 +177,7 @@ android {
         debug {
             signingConfig signingConfigs.debug
         }
-        release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://reactnative.dev/docs/signed-apk-android.
+        release { 
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
@@ -187,6 +206,8 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    implementation 'com.onesignal:OneSignal:[3.15.0, 3.99.99]'
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
