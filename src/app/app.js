@@ -5,6 +5,7 @@ import OneSignal from "react-native-onesignal";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import Toast from "react-native-toast-message";
 import { ThemeProvider } from "styled-components";
+import { BaseConfig } from "../base/dto/BaseConfig";
 import { GlobalStateProvider } from "../base/utils/context";
 import theme from "../theme/theme";
 import TabNavigator from "./navigations/bottom-tab";
