@@ -1,13 +1,12 @@
 import * as React from "react";
-import { Alert, Image, Linking, ScrollView } from "react-native";
+import { Image, Linking, ScrollView } from "react-native";
 import SafeAreaView from "react-native-safe-area-view";
 import Box from "../components/box";
-import TouchableButton from "../components/touchable-button";
-import Text from "../components/text";
 import BoxCenter from "../components/box-center";
-import theme from "../../theme/theme";
+import Text from "../components/text";
+import TouchableButton from "../components/touchable-button";
 
-export default class HomeView extends React.Component {
+export default class AboutView extends React.Component {
   openGithub = async () => {
     await Linking.openURL(
       "https://github.com/tulparyazilim/tulpar-base-reactnative"
@@ -30,7 +29,7 @@ export default class HomeView extends React.Component {
             <Box pt={20} pb={30}>
               <BoxCenter>
                 <Text fontSize={22} fontWeight="bold">
-                  HOME PAGE
+                  ABOUT PAGE
                 </Text>
               </BoxCenter>
 

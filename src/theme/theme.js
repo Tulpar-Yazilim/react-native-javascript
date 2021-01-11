@@ -14,7 +14,7 @@ const fonts = {
 };
 
 const colors = {
-  mainColor: "#E11E3C",
+  mainColor: "#1C739A",
   secondColor: "#F8F8F8",
   thirdColor: "#E8EAED",
   textDark: "#0A151F",

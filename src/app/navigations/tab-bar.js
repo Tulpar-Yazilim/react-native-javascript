@@ -2,6 +2,8 @@ import React from "react";
 import { Keyboard } from "react-native";
 import Box from "../components/box";
 import Button from "../components/tab-button";
+import { Icon } from "react-native-elements";
+import theme from "../../theme/theme";
 
 export default function TabBar({ state, descriptors, navigation }) {
   const [showTab, setShowTab] = React.useState(true);
@@ -71,14 +73,27 @@ export default function TabBar({ state, descriptors, navigation }) {
                 flex={1}
                 onPress={onPress}
               >
-                {/* {label === "Home" && (
-                  <Home
-                    width={24}
-                    height={24}
-                    color={isFocused ? theme.colors.mainColor : theme.colors.textDark}
+                {label === "Home" && (
+                  <Icon
+                    type="ionicon"
+                    name="home-outline"
+                    size={24}
+                    color={
+                      isFocused ? theme.colors.mainColor : theme.colors.textDark
+                    }
                   />
                 )}
-                {label === "Campaign" && (
+                {label === "About" && (
+                  <Icon
+                    type="ionicon"
+                    name="bookmarks-outline"
+                    size={24}
+                    color={
+                      isFocused ? theme.colors.mainColor : theme.colors.textDark
+                    }
+                  />
+                )}
+                {/* {label === "Campaign" && (
                   <Search
                     width={24}
                     height={24}
